@@ -26,12 +26,6 @@ public class ReportUtilTest {
   }
 
   @Test
-  public void parseNullInput() {
-     ReportUtil reportUtil = new ReportUtil();
-     assertTrue(reportUtil.parseInputToList(null)== null || reportUtil.parseInputToList(null).isEmpty());
-  }
-
-  @Test
   public void checkParsedData() {
     ReportUtil reportUtil = new ReportUtil();
     List<Project> list = reportUtil.parseInputToList("2343225,2345,us_east,RedTeam,ProjectApple,3445s");
