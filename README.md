@@ -37,7 +37,7 @@ The input is a comma delimited multiline String in the following format
 
 - Java 8
 - Junit 4.12
-- Gradle 5.2.1
+- Gradle 7.0
 
 ### Installation
 
