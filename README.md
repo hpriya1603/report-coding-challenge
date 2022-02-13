@@ -34,9 +34,9 @@ The input is a comma delimited multiline String in the following format
 
 ### Specifications 
 
-Java 8
-Junit 4.12
-Gradle 5.2.1
+- Java 8
+- Junit 4.12
+- Gradle 5.2.1
 
 ### Installation
 
