@@ -1,4 +1,4 @@
-## Project Report
+## Project Statistics Report
 
 This application provides a report on the following:
 
@@ -13,15 +13,15 @@ The input is a comma delimited multiline String in the following format
 
 ### Approach
 
-- Write a program that accepts multi line string as input as command line argument.
+- Write a program that accepts multi-line string as input through command line argument.
 - Call the corresponding functions to obtain different elements of the report.
-- Using Streams API, group the entities based on `Geozone` or `ContractId`
+- Using Streams API, group the attributes based on `Geozone` or `ContractId`
   and filter the unique `Customer IDs` by writing them to a Set.
-- Iteratively print the report for each entity of the group.
+- Iteratively print the report for each attribute of the group.
 
 ### Assumptions
 
-- The entities arrived at from the input String are of the following Data types:
+- The attributes are of the following Data types:
 
 ``````Customer Id : Integer
  Contract Id : Integer
@@ -30,7 +30,8 @@ The input is a comma delimited multiline String in the following format
  Projectcode : String
  Build duration : Integer (in Seconds)
 ``````
-- No Change in the output format or input format.
+- The input is a single multi-line String.
+- The attributes are not nullable.
 
 ### Specifications 
 
@@ -40,7 +41,7 @@ The input is a comma delimited multiline String in the following format
 
 ### Installation
 
-To run this Application, run the following commands in the command prompt/terminal, in the root folder of the project
+To run this application, run the following commands in the command prompt/terminal, from the root folder of the project
 
 ```
 ./gradlew clean && ./gradlew build

@@ -20,24 +20,24 @@ public class GenerateReport {
       .forEach(m -> System.out.println("Contract ID: "+ m.getKey() + "  Number of Unique Customer Ids: " + m.getValue()));
 
 
-    System.out.println("The number of unique customerId for each geozone");
-    System.out.println("------------------------------------------------");
+    System.out.println("\n The number of unique customerId for each geozone");
+    System.out.println("-------------------------------------------------");
 
     reportUtil.uniqueCustIdByGeoZone(projectDetails).entrySet()
       .stream()
       .forEach(m -> System.out.println("Geo Zone: "+ m.getKey() + "  Number of Unique Customer Ids: " + m.getValue()));
 
 
-    System.out.println("The average build duration for each geozone");
-    System.out.println("------------------------------------------");
+    System.out.println("\n The average build duration for each geozone");
+    System.out.println("--------------------------------------------");
 
     reportUtil.avgBuildDuration(projectDetails).entrySet()
       .stream()
       .forEach(m -> System.out.println("Geo Zone: "+ m.getKey() + "  Average build durations: " + m.getValue()));
 
 
-    System.out.println("The list of unique customerId for each geozone");
-    System.out.println("----------------------------------------------");
+    System.out.println("\n The list of unique customerId for each geozone");
+    System.out.println("-----------------------------------------------");
 
     reportUtil.uniqueCustIdByZoneList(projectDetails).entrySet()
       .stream()
